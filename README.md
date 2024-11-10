@@ -1,5 +1,4 @@
 
-<div align="center">
 <h1> LFSSMam: Mamba-based Light Field Semantic Segmentation with Depth and Multi-Spatial Information Fusion Representation Enhancement </h1>
 
 ## 👀Introduction
