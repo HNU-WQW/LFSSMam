@@ -6,8 +6,7 @@ Efficient modeling of 4D light fields for precise semantic segmentation has rece
 ![](figs/LFSSMam.png)
 
 ## 📈Results
-![](figs/UrbanLF_Real.png)
-![](figs/UrbanLF_Syn.png)
+![](figs/RESULT.png)
 
 ## 💡Environment
 
