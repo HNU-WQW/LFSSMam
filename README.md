@@ -3,6 +3,7 @@
 
 ## 👀Introduction
 Efficient modeling of 4D light fields for precise semantic segmentation has recently faced challenges in capturing long-range dependency information (CNN-based) and the secondary computational complexity memory constraints(Transformer-based), which limit the utilization of multi- spatial-angular information and the overall performance development. In this paper, we introduce LFSSMam, a novel light field semantic segmentation architecture fully based on selective structural state space model. LFSSMam leverages an innovative spatial-angular selective scanning mechanism to decouple and scan 4D multi-dimensional light field data, capturing rich spatial context, complementary angular, and structural information within the state space. Additionally, we design an SSM-based cross-fusion enhance module to perform selective scanning and fusion across multi-scale spatial-angular-modal light field information, adaptively complementing and enhancing central view features. Comprehensive experiments on both synthetic and real-world datasets demonstrate that LFSSMam achieves a leading SOTA performance (10.07% improvement) with reduced memory and computational complexity. This work provides insightful directions for the efficient modeling and application of multi-dimensional spatial-angular information in light fields.
+
 ![](figs/LFSSMam.png)
 
 ## 📈Results
@@ -95,14 +96,13 @@ Currently, we only publicly release the optimal trained weights for UrbanLF_Real
 <u> Please put them under `pretrained/vmamba/`. </u>
 
 2.Run the evaluation by:
-```shell
+   ```shell
     CUDA_VISIBLE_DEVICES="0/1/2/3/..." python eval.py -d="0" -n "dataset_name" -e="epoch_number" -p="visualize_savedir"
-```
+   ```
 
 Here, `dataset_name=UbanLF_Real/UrbanLF_Syn`, referring to the datasets.\
 `epoch_number` refers to a number standing for the epoch number you want to evaluate with.\
 We provide the best `epoth.pth` of UrbanLF_Real in the [LFSSMam Project](https://pan.baidu.com/s/122sPEJ8XOWkJKC8QmoRM-w?pwd=3trq) which is the whole project.\
 You can replace `epoch_number` with `.log_final/log_UrbanLF_Real/epoth.pth`
-
 
 3.Results will be saved in `visualize_savedir` and `visualize_savedir_color` folders.
