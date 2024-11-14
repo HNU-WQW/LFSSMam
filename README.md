@@ -41,7 +41,7 @@ Install pytorch, cuda and cudnn, then install other dependencies via:
 
     Note: The central and peripheral views need to be extracted from the original data set and grayscale values processed on RGB labels
 
-2. We also provide the processed datasets we use here: [Google Drive Link](https://pan.baidu.com/s/1zCmVnQ7jiZ2nH3sYjjpPDg?pwd=5p8i)
+2. We also provide the processed datasets we use here（only UrbanLF_Syn）: [Google Drive Link](https://ufile.io/0o862owh)
 
 3. If you are using your own datasets, please orgnize the dataset folder in the following structure:
     ```shell
@@ -102,7 +102,7 @@ Currently, we only publicly release the optimal trained weights for UrbanLF_Real
 
 Here, `dataset_name=UbanLF_Real/UrbanLF_Syn`, referring to the datasets.\
 `epoch_number` refers to a number standing for the epoch number you want to evaluate with.\
-We provide the best `epoth.pth` of UrbanLF_Real in the [LFSSMam Project](https://pan.baidu.com/s/122sPEJ8XOWkJKC8QmoRM-w?pwd=3trq) which is the whole project.\
-You can replace `epoch_number` with `.log_final/log_UrbanLF_Real/epoth.pth`
+We provide the best `epoth.pth` of UrbanLF_Syn in the [UrbanLF_Syn_base_best](https://ufile.io/5k59uj0p)/[UrbanLF_Syn_small_best](https://www.hostize.com/zh/v/223WMxfoVq)/[UrbanLF_Syn_tiny_best](https://www.hostize.com/zh/v/u8dsZBxh3p).\
+You can replace `epoch_number` with `.log_final/log_UrbanLF_Syn/epoth.pth`
 
 3.Results will be saved in `visualize_savedir` and `visualize_savedir_color` folders.
