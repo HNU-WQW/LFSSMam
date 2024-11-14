@@ -1,9 +1,13 @@
 
-<h1> LFSSMam: Mamba-based Light Field Semantic Segmentation with Depth and Multi-Spatial Information Fusion Representation Enhancement </h1>
+<h1> LFSSMam: Efficient Aggregation of Multi-Spatial-Angular-Modal Information in Light Field Semantic Segmentation Using Selective Scanning with SSMs </h1>
 
 ## 👀Introduction
+Efficient modeling of 4D light fields for precise semantic segmentation has recently faced challenges in capturing long-range dependency information (CNN-based) and the secondary computational complexity memory constraints(Transformer-based), which limit the utilization of multi- spatial-angular information and the overall performance development. In this paper, we introduce LFSSMam, a novel light field semantic segmentation architecture fully based on selective structural state space model. LFSSMam leverages an innovative spatial-angular selective scanning mechanism to decouple and scan 4D multi-dimensional light field data, capturing rich spatial context, complementary angular, and structural information within the state space. Additionally, we design an SSM-based cross-fusion enhance module to perform selective scanning and fusion across multi-scale spatial-angular-modal light field information, adaptively complementing and enhancing central view features. Comprehensive experiments on both synthetic and real-world datasets demonstrate that LFSSMam achieves a leading SOTA performance (10.07% improvement) with reduced memory and computational complexity. This work provides insightful directions for the efficient modeling and application of multi-dimensional spatial-angular information in light fields.
 
+![](figs/LFSSMam.png)
 
+## 📈Results
+![](figs/RESULT.png)
 
 ## 💡Environment
 
@@ -11,7 +15,7 @@ We test our codebase with `PyTorch 1.13.1 + CUDA 11.7`. Please install correspon
 
 1. Create environment.
     ```shell
-    conda create -n LFSSMam python==3.9
+    conda create -n LFSSMam python=3.9
     conda activate LFSSMam
     ```
 
@@ -37,7 +41,7 @@ Install pytorch, cuda and cudnn, then install other dependencies via:
 
     Note: The central and peripheral views need to be extracted from the original data set and grayscale values processed on RGB labels
 
-2. We also provide the processed datasets we use here: [Google Drive Link](https://pan.baidu.com/s/1zCmVnQ7jiZ2nH3sYjjpPDg?pwd=5p8i)
+2. We also provide the processed datasets we use here（only UrbanLF_Syn）: [Google Drive Link](https://ufile.io/0o862owh)
 
 3. If you are using your own datasets, please orgnize the dataset folder in the following structure:
     ```shell
@@ -85,22 +89,20 @@ Currently, we only publicly release the optimal trained weights for UrbanLF_Real
 
 1.Please download the pretrained [VMamba](https://github.com/MzeroMiko/VMamba) weights:
 
-    - [VMamba_Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmtiny_dp01_ckpt_epoch_292.pth).
-    - [VMamba_Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmsmall_dp03_ckpt_epoch_238.pth).
-    - [VMamba_Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmbase_dp06_ckpt_epoch_241.pth).
+- [VMamba_Tiny](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmtiny_dp01_ckpt_epoch_292.pth).
+- [VMamba_Small](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmsmall_dp03_ckpt_epoch_238.pth).
+- [VMamba_Base](https://github.com/MzeroMiko/VMamba/releases/download/%2320240218/vssmbase_dp06_ckpt_epoch_241.pth).
 
 <u> Please put them under `pretrained/vmamba/`. </u>
 
 2.Run the evaluation by:
-
-    ```shell
+   ```shell
     CUDA_VISIBLE_DEVICES="0/1/2/3/..." python eval.py -d="0" -n "dataset_name" -e="epoch_number" -p="visualize_savedir"
-    ```
+   ```
 
 Here, `dataset_name=UbanLF_Real/UrbanLF_Syn`, referring to the datasets.\
 `epoch_number` refers to a number standing for the epoch number you want to evaluate with.\
-We provide the best `epoth.pth` of UrbanLF_Real in the [LFSSMam Project](https://pan.baidu.com/s/122sPEJ8XOWkJKC8QmoRM-w?pwd=3trq) which is the whole project.\
-You can replace `epoch_number` with `.log_final/log_UrbanLF_Real/epoth.pth`
-
+We provide the best `epoth.pth` of UrbanLF_Syn in the [UrbanLF_Syn_base_best](https://ufile.io/5k59uj0p)/[UrbanLF_Syn_small_best](https://www.hostize.com/zh/v/223WMxfoVq)/[UrbanLF_Syn_tiny_best](https://www.hostize.com/zh/v/u8dsZBxh3p).\
+You can replace `epoch_number` with `.log_final/log_UrbanLF_Syn/epoth.pth`
 
 3.Results will be saved in `visualize_savedir` and `visualize_savedir_color` folders.
