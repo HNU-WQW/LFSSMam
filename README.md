@@ -85,7 +85,7 @@ We will fully release the training process and code after acceptance.
 
 ### Evaluation
 
-Currently, we only publicly release the optimal trained weights for UrbanLF_Real.
+Currently, we only publicly release the optimal trained weights for UrbanLF_Syn.
 
 1.Please download the pretrained [VMamba](https://github.com/MzeroMiko/VMamba) weights:
 

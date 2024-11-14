@@ -5,28 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d10b1d59-ed05-4936-9477-3bd38328aa81" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config_MFNet.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config_nyu.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config_pst900.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/config_sunrgbd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataloader/RGBXDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataloader/RGBXDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataloader/dataloader.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataloader/dataloader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/engine.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/engine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/evaluator.py" beforeDir="false" afterPath="$PROJECT_DIR$/engine/evaluator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/eval.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/figs/overall_flops.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/figs/sigma.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/builder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/encoders/dual_vmamba.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/encoders/dual_vmamba.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pretrained/vmamba/pretrained VMamba weights.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config_UrbanLF_Real.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config_UrbanLF_Real.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/config_UrbanLF_Syn.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/config_UrbanLF_Syn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/encoders/vmamba.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/encoders/vmamba.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained/vmamba/vssmbase_dp06_ckpt_epoch_241.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained/vmamba/vssmsmall_dp03_ckpt_epoch_238.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/calculate_params.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/calculate_params.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/visualize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pretrained/vmamba/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +44,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/ubuntu/wuqingwei/LFSigma&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -165,6 +150,9 @@
       <updated>1719537615456</updated>
       <workItem from="1731049936169" duration="1724000" />
       <workItem from="1731238881239" duration="570000" />
+      <workItem from="1731381315435" duration="1908000" />
+      <workItem from="1731592088205" duration="820000" />
+      <workItem from="1731593153647" duration="40000" />
     </task>
     <servers />
   </component>

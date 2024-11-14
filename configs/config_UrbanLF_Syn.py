@@ -40,7 +40,7 @@ C.num_eval_imgs = 28                                        #111
 C.num_classes = 14                                        #111
 C.class_names = ["bike", "building", "fence", "others", "person", "pole", "road", "sidewalk", "traffic sign", "vegetation", "vehicle", "bridge", "rider", "sky"]
 C.lf_image_names = ['1_1.png', '1_5.png', '1_9.png', '2_2.png', '2_5.png', '2_8.png', '3_3.png', '3_5.png', '3_7.png', '4_4.png',
-                    '4_5.png', '4_6.png', '5_1.png', '5_2.png', '5_3.png', '5_4.png', '5_6.png', '5_7.png', '5_8.png',
+                    '4_5.png', '4_6.png', '5_1.png', '5_2.png', '5_3.png', '5_4.png', '5_5.png', '5_6.png', '5_7.png', '5_8.png',
                     '5_9.png', '6_4.png', '6_5.png', '6_6.png', '7_3.png', '7_5.png', '7_7.png', '8_2.png', '8_5.png', '8_8.png',
                     '9_1.png', '9_5.png', '9_9.png']
 

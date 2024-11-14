@@ -2334,7 +2334,7 @@ class Backbone_VSSM(VSSM):
         return outs
 
 class Backbone_VSSM_LF(VSSM):
-    def __init__(self, patch_size=4, in_chans=96, num_classes=1000,
+    def __init__(self, patch_size=4, in_chans=99, num_classes=1000,
                  depths=[2, 2, 9, 2], dims=[96, 192, 384, 768],
                  d_state=16, ssm_ratio=2.0, attn_drop_rate=0.,
                  drop_rate=0., drop_path_rate=0.1, mlp_ratio=4.0,
