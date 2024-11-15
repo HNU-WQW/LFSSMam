@@ -1,5 +1,4 @@
-# Modified by Mzero #20240123
-# Copyright (C) 2023, Tri Dao, Albert Gu.
+
 import math
 import torch
 import torch.nn.functional as F

@@ -6,13 +6,6 @@ from torch.nn.modules import module
 import torch.nn.functional as F
 
 class UPerHead(nn.Module):
-    """Unified Perceptual Parsing for Scene Understanding.
-    This head is the implementation of `UPerNet
-    <https://arxiv.org/abs/1807.10221>`_.
-    Args:
-        pool_scales (tuple[int]): Pooling scales used in Pooling Pyramid
-            Module applied on the last feature. Default: (1, 2, 3, 6).
-    """
 
     def __init__(self, in_channels=[96, 192, 384, 768], num_classes=40, channels=512, pool_scales=(1, 2, 3, 6), norm_layer=nn.BatchNorm2d, dropout_ratio=0.1, align_corners=False):
         super(UPerHead, self).__init__()
@@ -105,17 +98,7 @@ class UPerHead(nn.Module):
 
 
 class PPM(nn.ModuleList):
-    """Pooling Pyramid Module used in PSPNet.
-    Args:
-        pool_scales (tuple[int]): Pooling scales used in Pooling Pyramid
-            Module.
-        in_channels (int): Input channels.
-        channels (int): Channels after modules, before conv_seg.
-        conv_cfg (dict|None): Config of conv layers.
-        norm_cfg (dict|None): Config of norm layers.
-        act_cfg (dict): Config of activation layers.
-        align_corners (bool): align_corners argument of F.interpolate.
-    """
+
 
     def __init__(self, pool_scales, in_channel, channels, norm_layer, align_corners=False):
         super(PPM, self).__init__()
