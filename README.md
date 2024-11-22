@@ -2,7 +2,7 @@
 <h1> LFSSMam: Efficient Aggregation of Multi-Spatial-Angular-Modal Information in Light Field Semantic Segmentation Using Selective Scanning with SSMs </h1>
 
 ## 👀Introduction
-Efficient modeling of 4D light fields for precise semantic segmentation has recently faced challenges in capturing long-range dependency information (CNN-based) and the secondary computational complexity memory constraints(Transformer-based), which limit the utilization of multi- spatial-angular information and the overall performance development. In this paper, we introduce LFSSMam, a novel light field semantic segmentation architecture fully based on selective structural state space model. LFSSMam leverages an innovative spatial-angular selective scanning mechanism to decouple and scan 4D multi-dimensional light field data, capturing rich spatial context, complementary angular, and structural information within the state space. Additionally, we design an SSM-based cross-fusion enhance module to perform selective scanning and fusion across multi-scale spatial-angular-modal light field information, adaptively complementing and enhancing central view features. Comprehensive experiments on both synthetic and real-world datasets demonstrate that LFSSMam achieves a leading SOTA performance (10.07% improvement) with reduced memory and computational complexity. This work provides insightful directions for the efficient modeling and application of multi-dimensional spatial-angular information in light fields.
+Efficient modeling of 4D light fields for precise semantic segmentation has recently faced challenges in capturing long-range dependency information and the secondary computational complexity memory constraints, which limit the utilization of multi-spatial-angular information and the overall performance development. In this paper, we introduce LFSSMam, a novel Light Field Semantic Segmentation architecture fully based on selective structured state space model (Mamba). LFSSMam designs an innovative spatial-angular selective scanning mechanism to decouple and scan 4D multi-dimensional light field data, capturing rich spatial context, complementary angular, and structural information within the state space. Additionally, we design an SSM-based cross-fusion enhance module to perform selective scanning and fusion across multi-scale spatial-angular-modal light field information, adaptively complementing and enhancing central view features. Comprehensive experiments on both synthetic and real-world datasets demonstrate that LFSSMam achieves a leading SOTA performance (10.07\% improvement) with reduced memory and computational complexity. This work provides insightful directions for the efficient modeling and application of multi-dimensional spatial-angular information in light fields. 
 
 ![](figs/LFSSMam.png)
 
@@ -37,11 +37,11 @@ Install pytorch, cuda and cudnn, then install other dependencies via:
 
 ### Datasets
 
-1. We use UrbanLF datasets, including both UrbanLF_Real and UrbanLF_Syn. Please refer to [UrbanLF](https://github.com/HAWKEYE-Group/UrbanLF) for dataset.
+1. We use UrbanLF datasets, including both UrbanLF_Real and UrbanLF_Syn.
 
     Note: The central and peripheral views need to be extracted from the original data set and grayscale values processed on RGB labels
 
-2. We also provide the processed datasets we use here（only UrbanLF_Syn）: [Google Drive Link](https://ufile.io/0o862owh)
+2. We provide the processed datasets we use here（only UrbanLF_Syn）: [UrbanLF_Syn_processed](https://ufile.io/0o862owh)
 
 3. If you are using your own datasets, please orgnize the dataset folder in the following structure:
     ```shell
