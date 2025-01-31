@@ -105,6 +105,6 @@ Here, `dataset_name=UbanLF_Real/UrbanLF_Syn`, referring to the datasets.\
 We provide the best `epoth.pth` of UrbanLF_Syn in the [UrbanLF_Syn_base_best](https://ufile.io/5k59uj0p)/[UrbanLF_Syn_small_best](https://www.hostize.com/zh/v/223WMxfoVq)/[UrbanLF_Syn_tiny_best](https://www.hostize.com/zh/v/u8dsZBxh3p).\
 You can replace `epoch_number` with `.log_final/log_UrbanLF_Syn/epoth.pth`
 
-We also provide the  best `epoth.pth` of UrbanLF_Syn_Big(base) and UrbanLF_Syn_Small(base) in the [UrbanLF_Syn_Big_best](https://ufile.io/qa4m2354)/[ UrbanLF_Syn_Small](https://ufile.io/o1hv6vz3).\
+We also provide the  best `epoth.pth` of UrbanLF_Syn_Big(LFSSMam(T)) and UrbanLF_Syn_Small(LFSSMam(T)) in the [UrbanLF_Syn_Big_best](https://ufile.io/qa4m2354)/[ UrbanLF_Syn_Small](https://ufile.io/o1hv6vz3).\
 \
 3.Results will be saved in `visualize_savedir` and `visualize_savedir_color` folders.
