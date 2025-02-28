@@ -89,9 +89,9 @@ Currently, we only publicly release the optimal trained weights for UrbanLF_Syn.
 
 1.Please download the pretrained VMamba weights:
 
-- [VMamba_Tiny](https://www.hostize.com/v/Pp_OQZ6SI5).
-- [VMamba_Small](https://www.hostize.com/v/7uzMcGB6-u).
-- [VMamba_Base](https://www.hostize.com/v/cKZgtMwmxf).
+- [VMamba_Tiny](https://ufile.io/gitbfcor).
+- [VMamba_Small](https://ufile.io/aqjfhks3).
+- [VMamba_Base](https://ufile.io/0v4hyec5).
 
 <u> Please put them under `pretrained/vmamba/`. </u>
 
